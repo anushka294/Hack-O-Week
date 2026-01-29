@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sunny Side Kitchen | Menu</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, sans-serif;
+      margin: 0;
+      background: #faf7f2;
+      color: #333;
+    }
+
+    header {
+      background: url('https://images.unsplash.com/photo-1528605248644-14dd04022da1') center/cover;
+      color: white;
+      text-align: center;
+      padding: 70px 20px;
+    }
+
+    header h1 {
+      font-size: 3rem;
+      margin-bottom: 10px;
+    }
+
+    header p {
+      font-size: 1.2rem;
+      opacity: 0.95;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: auto;
+      padding: 40px 20px;
+    }
+
+    .category {
+      margin-bottom: 50px;
+    }
+
+    .category h2 {
+      border-bottom: 3px solid #e0c097;
+      padding-bottom: 8px;
+      margin-bottom: 25px;
+      color: #b85c38;
+      font-size: 1.8rem;
+    }
+
+    .item {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 18px;
+    }
+
+    .item-name {
+      font-weight: 600;
+    }
+
+    .item-desc {
+      font-size: 0.9rem;
+      color: #666;
+      margin-top: 4px;
+    }
+
+    .price {
+      font-weight: 600;
+      color: #b85c38;
+      white-space: nowrap;
+      margin-left: 15px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 25px;
+      background: #2f2f2f;
+      color: #ddd;
+      font-size: 0.9rem;
+    }
+
+    footer span {
+      color: #e0c097;
+    }
+
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 2.2rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Sunny Side Kitchen</h1>
+  <p>Fresh food, warm smiles, and flavors that feel like home</p>
+</header>
+
+<div class="container">
+
+  <div class="category">
+    <h2>🍳 Breakfast Favorites</h2>
+
+    <div class="item">
+      <div>
+        <div class="item-name">Classic Pancake Stack</div>
+        <div class="item-desc">Fluffy pancakes served with butter and maple syrup</div>
+      </div>
+      <div class="price">$6.99</div>
+    </div>
+
+    <div class="item">
+      <div>
+        <div class="item-name">Farmhouse Omelette</div>
+        <div class="item-desc">Eggs, cheese, peppers, onions, and your choice of meat</div>
+      </div>
+      <div class="price">$8.49</div>
+    </div>
+
+    <div class="item">
+      <div>
+        <div class="item-name">Avocado Toast</div>
+        <div class="item-desc">Toasted sourdough topped with fresh avocado and seasoning</div>
+      </div>
+      <div class="price">$7.25</div>
+    </div>
+  </div>
+
+  <div class="category">
+    <h2>🍔 Lunch & Comfort Meals</h2>
+
+    <div class="item">
+      <div>
+        <div class="item-name">Sunny Burger</div>
+        <div class="item-desc">Juicy beef patty, cheese, lettuce, tomato, house sauce</div>
+      </div>
+      <div class="price">$10.99</div>
+    </div>
+
+    <div class="item">
+      <div>
+        <div class="item-name">Crispy Chicken Sandwich</div>
+        <div class="item-desc">Golden fried chicken with slaw on a soft bun</div>
+      </div>
+      <div class="price">$9.75</div>
+    </div>
+
+    <div class="item">
+      <div>
+        <div class="item-name">Homestyle Mac & Cheese</div>
+        <div class="item-desc">Creamy, cheesy, and baked to perfection</div>
+      </div>
+      <div class="price">$8.50</div>
+    </div>
+  </div>
+
+  <div class="category">
+    <h2>🥗 Fresh Sides</h2>
+
+    <div class="item">
+      <div>
+        <div class="item-name">Garden Salad</div>
+        <div class="item-desc">Mixed greens, tomatoes, cucumbers, house dressing</div>
+      </div>
+      <div class="price">$4.99</div>
+    </div>
+
+    <div class="item">
+      <div>
+        <div class="item-name">Crispy Fries</div>
+        <div class="item-desc">Golden, lightly seasoned, always hot</div>
+      </div>
+      <div class="price">$3.50</div>
+    </div>
+  </div>
+
+  <div class="category">
+    <h2>☕ Drinks</h2>
+
+    <div class="item">
+      <div class="item-name">Fresh Brewed Coffee</div>
+      <div class="price">$2.50</div>
+    </div>
+
+    <div class="item">
+      <div class="item-name">Iced Tea / Lemonade</div>
+      <div class="price">$2.75</div>
+    </div>
+
+    <div class="item">
+      <div class="item-name">Soft Drinks</div>
+      <div class="price">$2.25</div>
+    </div>
+  </div>
+
+</div>
+
+<footer>
+  <p>📍 Proudly serving our neighborhood with love & flavor</p>
+  <p><span>Sunny Side Kitchen</span> • Open Daily</p>
+</footer>
+
+</body>
+</html>
