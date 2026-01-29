@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TechNova 2026 | Event Registration</title>
+
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, sans-serif;
+      background: linear-gradient(135deg, #1f1c2c, #928dab);
+      margin: 0;
+      padding: 0;
+      color: #333;
+    }
+
+    .container {
+      max-width: 600px;
+      background: #ffffff;
+      margin: 60px auto;
+      padding: 40px;
+      border-radius: 12px;
+      box-shadow: 0 15px 40px rgba(0,0,0,0.2);
+    }
+
+    h1 {
+      text-align: center;
+      color: #3b3b98;
+      margin-bottom: 10px;
+    }
+
+    .subtitle {
+      text-align: center;
+      font-size: 1rem;
+      color: #666;
+      margin-bottom: 30px;
+    }
+
+    label {
+      font-weight: 600;
+      margin-top: 18px;
+      display: block;
+    }
+
+    input, select, textarea {
+      width: 100%;
+      padding: 12px;
+      margin-top: 8px;
+      border-radius: 6px;
+      border: 1px solid #ccc;
+      font-size: 0.95rem;
+    }
+
+    textarea {
+      resize: none;
+    }
+
+    .note {
+      font-size: 0.85rem;
+      color: #777;
+      margin-top: 6px;
+    }
+
+    button {
+      margin-top: 30px;
+      width: 100%;
+      padding: 14px;
+      background: #3b3b98;
+      color: #fff;
+      font-size: 1.1rem;
+      font-weight: 600;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+
+    button:hover {
+      background: #2c2c7a;
+    }
+
+    footer {
+      text-align: center;
+      margin-top: 20px;
+      font-size: 0.85rem;
+      color: #eee;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="container">
+    <h1>🚀 TechNova 2026</h1>
+    <p class="subtitle">
+      Ready to innovate, compete, and have fun?  
+      Register below and be part of our biggest tech fest!
+    </p>
+
+    <form>
+      <label>Full Name</label>
+      <input type="text" placeholder="Enter your full name" required>
+
+      <label>Email Address</label>
+      <input type="email" placeholder="you@example.com" required>
+
+      <label>Mobile Number</label>
+      <input type="tel" placeholder="10-digit mobile number" required>
+
+      <label>College / University</label>
+      <input type="text" placeholder="Your college name" required>
+
+      <label>Department / Branch</label>
+      <input type="text" placeholder="e.g., Computer Science">
+
+      <label>Year of Study</label>
+      <select required>
+        <option value="">Select your year</option>
+        <option>1st Year</option>
+        <option>2nd Year</option>
+        <option>3rd Year</option>
+        <option>4th Year</option>
+      </select>
+
+      <label>Select Event</label>
+      <select required>
+        <option value="">Choose an event</option>
+        <option>Hackathon</option>
+        <option>Coding Challenge</option>
+        <option>Robotics Workshop</option>
+        <option>Tech Quiz</option>
+        <option>UI/UX Design Contest</option>
+      </select>
+
+      <label>Any experience or expectations? (Optional)</label>
+      <textarea rows="4" placeholder="Tell us what excites you about this event 🙂"></textarea>
+
+      <p class="note">
+        ⚡ After submission, our team will contact you with further details.
+      </p>
+
+      <button type="submit">Register Now 🚀</button>
+    </form>
+  </div>
+
+  <footer>
+    © 2026 TechNova | Organized by the College Tech Club
+  </footer>
+
+</body>
+</html>
