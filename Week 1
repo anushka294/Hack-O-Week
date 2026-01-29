@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Student Portfolio</title>
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background: #f5f5f5;
+      color: #333;
+    }
+
+    header {
+      background: #2c3e50;
+      color: white;
+      padding: 40px 20px;
+      text-align: center;
+    }
+
+    section {
+      padding: 40px 20px;
+      max-width: 900px;
+      margin: auto;
+    }
+
+    h2 {
+      color: #2c3e50;
+      margin-bottom: 20px;
+    }
+
+    .projects {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+
+    .card {
+      background: white;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
+    footer {
+      background: #2c3e50;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+
+    a {
+      color: #3498db;
+      text-decoration: none;
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <h1>Anushka Sarode</h1>
+    <p>Student | Aspiring Developer | Designer</p>
+  </header>
+
+  <section>
+    <h2>About Me</h2>
+    <p>
+      I am a student passionate about technology and learning new skills.
+      This portfolio showcases some of my academic and personal projects.
+    </p>
+  </section>
+
+  <section>
+    <h2>Projects</h2>
+    <div class="projects">
+      <div class="card">
+        <h3>infosys springboard</h3>
+        <p>Completed 17 hour course in c programming and cleared the assessment.</p>
+      </div>
+
+      <div class="card">
+        <h3>tinker lab</h3>
+        <p>studied and implemented html and css to create basic webpages.</p>
+<p>Tinkercad is an online simulation platform where I learned the basics of Arduino Uno by building and testing virtual circuits.</p>
+      </div>
+
+      <div class="card">
+        <h3>Startup simulator</h3>
+        <p>Startup Simulator is a learning activity where I created PPTs to present mock startup ideas, focusing on innovation, business models, and pitching concepts.</p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Skills</h2>
+    <ul>
+      <li>HTML, CSS</li>
+      <li>JavaScript</li>
+      <li>Python / Java / C++</li>
+      <li>Problem Solving</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Contact</h2>
+    <p>Email: anushka.sarode.batch2025@sitnagpur.siu.edu.in</p>
+    <p>GitHub: <a href="#">github.com/anushka294</a></p>
+    <p>LinkedIn: <a href="#">linkedin.com/in/anushka-sarode-005243377</a></p>
+  </section>
+
+  <footer>
+    <p>© 2026 Anushka Sarode</p>
+  </footer>
+
+</body>
+</html>
+
