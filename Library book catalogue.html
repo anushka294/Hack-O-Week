@@ -1,0 +1,190 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Library Book Catalogue</title>
+
+<style>
+
+body{
+font-family: Arial, sans-serif;
+background:#f4f6f9;
+margin:0;
+padding:20px;
+}
+
+.container{
+max-width:800px;
+margin:auto;
+background:white;
+padding:30px;
+border-radius:10px;
+box-shadow:0 4px 10px rgba(0,0,0,0.1);
+}
+
+h1{
+text-align:center;
+color:#333;
+}
+
+input{
+padding:10px;
+margin:5px;
+width:40%;
+border:1px solid #ccc;
+border-radius:5px;
+}
+
+button{
+padding:10px 15px;
+margin:5px;
+border:none;
+background:#4a6cf7;
+color:white;
+border-radius:5px;
+cursor:pointer;
+}
+
+button:hover{
+background:#3451d1;
+}
+
+.book{
+background:#f1f3f7;
+padding:10px;
+margin:8px 0;
+border-radius:5px;
+}
+
+.message{
+margin-top:10px;
+color:#444;
+font-style:italic;
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>📚 Library Book Catalogue</h1>
+<p style="text-align:center;">
+A small catalogue to keep track of books. You can add, search, or remove books anytime.
+</p>
+
+<input id="title" placeholder="Book Title">
+<input id="author" placeholder="Author">
+
+<br>
+
+<button onclick="addBook()">Add Book</button>
+<button onclick="searchBook()">Search by Title</button>
+<button onclick="removeBook()">Remove Book</button>
+<button onclick="displayBooks()">Show Catalogue</button>
+
+<div class="message" id="message"></div>
+
+<h3>Books in Catalogue</h3>
+<div id="catalogue"></div>
+
+</div>
+
+<script>
+
+const MAX_BOOKS = 5
+let books = []
+
+function showMessage(text){
+document.getElementById("message").innerText = text
+}
+
+function addBook(){
+
+let title = document.getElementById("title").value.trim()
+let author = document.getElementById("author").value.trim()
+
+if(title === "" || author === ""){
+showMessage("Please enter both the book title and the author's name.")
+return
+}
+
+if(books.length >= MAX_BOOKS){
+showMessage("The catalogue is full. You need to remove a book before adding a new one.")
+return
+}
+
+books.push({title, author})
+
+showMessage("Nice! The book was added to the catalogue.")
+
+displayBooks()
+
+}
+
+function searchBook(){
+
+let title = document.getElementById("title").value.trim()
+
+let book = books.find(b => b.title.toLowerCase() === title.toLowerCase())
+
+if(book){
+showMessage("Good news! We found the book: " + book.title + " by " + book.author)
+}
+else{
+showMessage("Sorry, that book isn't in the catalogue right now.")
+}
+
+}
+
+function removeBook(){
+
+let title = document.getElementById("title").value.trim()
+
+let index = books.findIndex(b => b.title.toLowerCase() === title.toLowerCase())
+
+if(index === -1){
+showMessage("Hmm... we couldn't find that book to remove.")
+return
+}
+
+books.splice(index,1)
+
+showMessage("The book has been removed from the catalogue.")
+
+displayBooks()
+
+}
+
+function displayBooks(){
+
+let catalogue = document.getElementById("catalogue")
+
+catalogue.innerHTML = ""
+
+if(books.length === 0){
+catalogue.innerHTML = "<p>The catalogue is currently empty.</p>"
+return
+}
+
+books.forEach((book,i)=>{
+
+catalogue.innerHTML += `
+<div class="book">
+<strong>${i+1}. ${book.title}</strong><br>
+Author: ${book.author}
+</div>
+`
+
+})
+
+}
+
+</script>
+
+</body>
+</html>
+```
